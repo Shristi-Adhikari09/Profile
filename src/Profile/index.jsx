@@ -4,7 +4,7 @@ export default function Profile() {
       {/* LEFT SIDE */}
       <div className="h-screen w-full overflow-y-auto bg-[#002E58] px-10 py-7 text-white sm:max-w-full md:w-[550px] lg:w-[450px]">
         {/* CONTACT */}
-        <h6 className="inline-block pb-5 text-left text-2xl font-light underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
+        <h6 className="inline-block pb-5 text-left text-2xl font-medium underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
           CONTACT
         </h6>
         <ul className="space-y-2 pb-8 text-xl md:text-2xl lg:text-sm">
@@ -29,7 +29,7 @@ export default function Profile() {
         </ul>
 
         {/* SKILLS */}
-        <h6 className="inline-block pb-8 text-left text-2xl font-light underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
+        <h6 className="inline-block pb-8 text-left text-2xl underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
           SKILLS
         </h6>
 
@@ -60,21 +60,29 @@ export default function Profile() {
         </ul>
 
         {/* LANGUAGES */}
-        <h6 className="inline-block pb-8 text-left text-2xl font-light underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
+        <h6 className="inline-block pb-6 text-left text-2xl underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
           LANGUAGES
         </h6>
         <ul className="list-disc space-y-1 pb-8 pl-6 text-xl md:text-xl lg:pb-4 lg:text-[18px]">
-          <li className="hover:text-blue-800">Nepali</li>
-          <li className="hover:text-blue-800">English</li>
+          <li>
+            <span className="hover:text-blue-800"> Nepali </span>
+          </li>
+          <li>
+            <span className="hover:text-blue-800"> English </span>
+          </li>
         </ul>
 
         {/* HOBBIES */}
-        <h6 className="inline-block pb-8 text-left text-2xl font-light underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
+        <h6 className="inline-block pb-8 text-left text-2xl underline underline-offset-8 transition hover:text-black hover:decoration-black md:pb-4 md:text-2xl lg:pb-8 lg:text-[22px]">
           HOBBIES
         </h6>
         <ul className="list-disc space-y-1 pl-5 text-xl md:text-xl lg:pb-4 lg:text-[18px]">
-          <li className="hover:text-blue-800">Sketching</li>
-          <li className="hover:text-blue-800">Reading</li>
+          <li>
+            <span className="hover:text-blue-800"> Sketching</span>
+          </li>
+          <li>
+            <span className="hover:text-blue-800">Reading</span>{' '}
+          </li>
         </ul>
       </div>
 
@@ -123,10 +131,10 @@ export default function Profile() {
         </ul>
 
         {/* PROJECT */}
-        <h6 className="pb-3 text-left text-2xl font-light text-[#002E58] underline decoration-black underline-offset-8 md:pt-12 md:text-3xl lg:pt-8 lg:pb-4 lg:text-[22px]">
+        <h6 className="inline-block pb-3 text-left text-2xl font-light text-[#002E58] underline decoration-black underline-offset-8 transition hover:text-blue-800 hover:decoration-blue-800 md:pt-12 md:text-3xl lg:pt-8 lg:pb-4 lg:text-[22px]">
           PROJECT
         </h6>
-        <ul className="font-light md:text-xl lg:text-[18px]">
+        <ul className="pb-4 font-light md:text-xl lg:text-[18px]">
           <li>
             <h6 className="text-[20px] font-light">BUS RESERVATION SYSTEM</h6>
             <ul className="list-disc space-y-2 pb-2 pl-12 text-left text-[18px] text-black lg:text-base">
@@ -145,6 +153,23 @@ export default function Profile() {
               </li>
               <li>USING: C</li>
             </ul>
+          </li>
+        </ul>
+
+        <h6 className="inline-block pb-4 pl-0 text-left text-2xl font-light text-[#002E58] underline decoration-black underline-offset-8 transition hover:text-blue-800 hover:decoration-blue-800 md:pt-12 md:text-3xl lg:pt-8 lg:pb-4 lg:text-[22px]">
+          ADDITIONAL INFORMATION
+        </h6>
+        <ul className="list-disc space-y-1">
+          <li>
+            <span className="text-xl font-normal">Languages: </span>
+            <span className="text-lg font-light"> English, Nepali </span>
+          </li>
+          {/* <li>
+                <span className="font-medium">Certificate:</span> —
+              </li> */}
+          <li>
+            <span className="text-xl font-normal">Hobbies:</span>{' '}
+            <span className="text-lg font-light"> Sketching, Reading </span>
           </li>
         </ul>
       </div>
